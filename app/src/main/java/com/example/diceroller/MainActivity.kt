@@ -59,12 +59,13 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
         )
         Spacer(Modifier.height(16.dp))
         
-        Button(onClick = { result = (1..6).random() }) {
+        Button(onClick = { result = (1..6).random() })
+        {
             Text(text = stringResource(id = R.string.roll))
         }
     }
     // kotlin Lambda expression
-//    val lambdaName:(String) -> Unit = { s: String -> print(s) })
+//    val lambdaName:(InputType) -> ReturnType = {arguments:InputType -> body}
 }
 
 @Preview(showBackground = true)
